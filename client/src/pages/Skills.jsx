@@ -20,7 +20,7 @@ import {
   FaPython,
   FaGithub,
 } from "react-icons/fa";
-import { SiExpress, SiJest, SiRedux } from "react-icons/si";
+import { SiExpress, SiJest, SiRedux, SiVitest } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiAdobephotoshop } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
@@ -158,6 +158,11 @@ const Skills = () => {
       toolName: "Jest",
       toolIcon: <SiJest size={64} />,
       color: "text-pink-500",
+    },
+    {
+      toolName: "Vitest",
+      toolIcon: <SiVitest size={64} />,
+      color: "text-amber-500",
     },
     {
       toolName: "Netlify",
