@@ -15,7 +15,7 @@ const Home = () => {
             Vivekananthan S
           </h1>
           <div className=" text-lg lg:text-xl">
-            <p>I'm a Software Developer.</p>
+            <p>I'm a Junior Software Developer.</p>
             <p>
               Currently, I'm working at{" "}
               <a

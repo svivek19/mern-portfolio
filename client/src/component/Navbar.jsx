@@ -70,6 +70,14 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <Link
+                to={"/experience"}
+                className="block py-2 px-3 text-white brush-underline"
+              >
+                Experience
+              </Link>
+            </li>
+            <li>
               <a
                 href="#"
                 className="block py-2 px-3 text-white brush-underline"
