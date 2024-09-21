@@ -62,6 +62,14 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <Link
+                to={"/projects"}
+                className="block py-2 px-3 text-white brush-underline"
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
               <a
                 href="#"
                 className="block py-2 px-3 text-white brush-underline"

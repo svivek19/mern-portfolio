@@ -17,6 +17,7 @@ import {
   FaSlack,
   FaTrello,
 } from "react-icons/fa";
+import SkillToolCard from "../component/SkillToolCard";
 
 const Skills = () => {
   const skills = [
@@ -114,56 +115,10 @@ const Skills = () => {
   return (
     <div>
       {/* Skills Section */}
-      <div className="px-4 py-8">
-        <h1 className="text-2xl lg:text-3xl text-center mb-10">
-          Technical{" "}
-          <span className="text-violet-400 font-semibold">Proficiencies</span>
-        </h1>
-
-        <div className="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-8 gap-4 mt-4">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className={`flex flex-col items-center p-4 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300`}
-            >
-              <div className={`mb-2 ${skill.color}`}>{skill.skillIcon}</div>
-              <h2
-                className={`text-lg text-center font-semibold ${skill.color} ${
-                  skill.skillName.length > 10 ? "text-sm" : ""
-                } break-words`}
-              >
-                {skill.skillName}
-              </h2>
-            </div>
-          ))}
-        </div>
-      </div>
+      <SkillToolCard title="Technical Proficiencies" items={skills} />
 
       {/* Tools Section */}
-      <div className="px-4 py-8">
-        <h1 className="text-2xl lg:text-3xl text-center mb-10">
-          <span className="text-violet-400 font-semibold">Software </span>I
-          Utilize{" "}
-        </h1>
-
-        <div className="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-8 gap-4 mt-4">
-          {tools.map((tool, index) => (
-            <div
-              key={index}
-              className={`flex flex-col items-center p-4 border rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300`}
-            >
-              <div className={`mb-2 ${tool.color}`}>{tool.toolIcon}</div>
-              <h2
-                className={`text-lg text-center font-semibold ${tool.color} ${
-                  tool.toolName.length > 10 ? "text-sm" : ""
-                } break-words`}
-              >
-                {tool.toolName}
-              </h2>
-            </div>
-          ))}
-        </div>
-      </div>
+      <SkillToolCard title="Software I Utilize" items={tools} />
     </div>
   );
 };
