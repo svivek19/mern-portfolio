@@ -18,10 +18,14 @@ const Home = () => {
             <p>I'm a Software Developer.</p>
             <p>
               Currently, I'm working at{" "}
-              <span className="text-sky-500 underline underline-offset-4 cursor-pointer">
+              <a
+                href="#"
+                target="_blank"
+                className="text-sky-500 underline underline-offset-4 cursor-pointer"
+              >
                 {" "}
                 QSIS
-              </span>
+              </a>
               .
             </p>
           </div>
