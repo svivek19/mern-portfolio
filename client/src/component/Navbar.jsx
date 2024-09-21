@@ -78,12 +78,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to={"/contact"}
                 className="block py-2 px-3 text-white brush-underline"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
