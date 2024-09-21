@@ -41,3 +41,20 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/* animate image */
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-1%);
+    animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.1, 1);
+  }
+}
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
