@@ -16,25 +16,78 @@ import {
   FaVial,
   FaSlack,
   FaTrello,
+  FaAws,
+  FaPython,
+  FaGithub,
 } from "react-icons/fa";
+import { SiExpress, SiJest, SiRedux } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiAdobephotoshop } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+import { TbBrandReactNative } from "react-icons/tb";
+import { BiLogoTypescript } from "react-icons/bi";
+import { IoLogoVercel } from "react-icons/io5";
+import { BiLogoNetlify } from "react-icons/bi";
+import { AiFillThunderbolt } from "react-icons/ai";
+import { SiMui, SiAntdesign, SiCanva } from "react-icons/si";
+
 import SkillToolCard from "../component/SkillToolCard";
 
 const Skills = () => {
   const skills = [
+    {
+      skillName: "MongoDB",
+      color: "text-green-500",
+      skillIcon: <FaDatabase size={64} />,
+    },
+    {
+      skillName: "Express JS",
+      color: "text-gray-300",
+      skillIcon: <SiExpress size={64} />,
+    },
+
+    {
+      skillName: "React JS",
+      color: "text-blue-500",
+      skillIcon: <FaReact size={64} />,
+    },
+    {
+      skillName: "Node JS",
+      color: "text-green-500",
+      skillIcon: <FaNodeJs size={64} />,
+    },
+
+    {
+      skillName: "Redux",
+      color: "text-violet-500",
+      skillIcon: <SiRedux size={64} />,
+    },
     {
       skillName: "JavaScript",
       color: "text-yellow-500",
       skillIcon: <FaJsSquare size={64} />,
     },
     {
-      skillName: "React",
-      color: "text-blue-500",
-      skillIcon: <FaReact size={64} />,
+      skillName: "TypeScript",
+      color: "text-sky-500",
+      skillIcon: <BiLogoTypescript size={64} />,
     },
     {
-      skillName: "Node.js",
-      color: "text-green-500",
-      skillIcon: <FaNodeJs size={64} />,
+      skillName: "MUI",
+      color: "text-sky-500",
+      skillIcon: <SiMui size={64} />,
+    },
+    {
+      skillName: "ANTD",
+      color: "text-red-300",
+      skillIcon: <SiAntdesign size={64} />,
+    },
+
+    {
+      skillName: "React Native",
+      color: "text-sky-500",
+      skillIcon: <TbBrandReactNative size={64} />,
     },
     {
       skillName: "HTML",
@@ -43,72 +96,88 @@ const Skills = () => {
     },
     {
       skillName: "CSS",
-      color: "text-blue-600",
+      color: "text-blue-500",
       skillIcon: <FaCss3Alt size={64} />,
     },
+
     {
-      skillName: "MongoDB",
-      color: "text-green-600",
-      skillIcon: <FaDatabase size={64} />,
-    },
-    {
-      skillName: "Git",
-      color: "text-red-600",
-      skillIcon: <FaGitAlt size={64} />,
+      skillName: "Tailwind CSS",
+      color: "text-cyan-500",
+      skillIcon: <RiTailwindCssFill size={64} />,
     },
     {
       skillName: "Bootstrap",
-      color: "text-purple-600",
+      color: "text-purple-500",
       skillIcon: <FaBootstrap size={64} />,
+    },
+    {
+      skillName: "AWS",
+      color: "text-amber-400",
+      skillIcon: <FaAws size={64} />,
+    },
+    {
+      skillName: "Python",
+      color: "text-slate-100",
+      skillIcon: <FaPython size={64} />,
     },
   ];
 
   const tools = [
     {
-      toolName: "Visual Studio Code",
-      toolIcon: <FaCode size={64} />,
+      toolName: "VS Code",
+      toolIcon: <VscVscode size={64} />,
       color: "text-blue-500",
     },
     {
       toolName: "Git",
       toolIcon: <FaGitAlt size={64} />,
-      color: "text-red-600",
+      color: "text-red-500",
+    },
+    {
+      toolName: "GitHub",
+      toolIcon: <FaGithub size={64} />,
+      color: "text-gray-300",
     },
     {
       toolName: "Postman",
-      toolIcon: <FaEnvelope size={64} />,
+      toolIcon: <SiPostman size={64} />,
       color: "text-orange-500",
     },
     {
-      toolName: "Figma",
-      toolIcon: <FaSketch size={64} />,
-      color: "text-purple-500",
+      toolName: "Thunder Client",
+      toolIcon: <AiFillThunderbolt size={64} />,
+      color: "text-gray-200",
     },
-    {
-      toolName: "Docker",
-      toolIcon: <FaDocker size={64} />,
-      color: "text-blue-600",
-    },
-    { toolName: "npm", toolIcon: <FaNpm size={64} />, color: "text-red-400" },
+    { toolName: "NPM", toolIcon: <FaNpm size={64} />, color: "text-rose-500" },
     {
       toolName: "MongoDB Compass",
       toolIcon: <FaDatabase size={64} />,
-      color: "text-green-600",
+      color: "text-green-500",
     },
     {
       toolName: "Jest",
-      toolIcon: <FaVial size={64} />,
+      toolIcon: <SiJest size={64} />,
       color: "text-pink-500",
     },
     {
-      toolName: "Slack",
-      toolIcon: <FaSlack size={64} />,
-      color: "text-purple-600",
+      toolName: "Netlify",
+      toolIcon: <BiLogoNetlify size={64} />,
+      color: "text-cyan-500",
     },
     {
-      toolName: "Trello",
-      toolIcon: <FaTrello size={64} />,
-      color: "text-green-500",
+      toolName: "Vercel",
+      toolIcon: <IoLogoVercel size={64} />,
+      color: "text-gray-200",
+    },
+    {
+      toolName: "PhotoShop",
+      toolIcon: <SiAdobephotoshop size={64} />,
+      color: "text-blue-500",
+    },
+    {
+      toolName: "Canva",
+      toolIcon: <SiCanva size={64} />,
+      color: "text-sky-500",
     },
   ];
 

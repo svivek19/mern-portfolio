@@ -44,7 +44,7 @@ const Home = () => {
             <p className="text-base md:text-lg lg:text-xl">
               Hi, My name is{" "}
               <span className="text-violet-400 font-semibold">
-                Vivekananthan.
+                Vivekananthan S.
               </span>
             </p>
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 const SkillToolCard = ({ title, items }) => {
   return (
     <div className="px-4 py-8">
