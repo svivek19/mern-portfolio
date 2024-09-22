@@ -20,7 +20,15 @@ import {
   FaPython,
   FaGithub,
 } from "react-icons/fa";
-import { SiExpress, SiJest, SiRedux, SiVitest } from "react-icons/si";
+import {
+  SiAmazondynamodb,
+  SiAwsamplify,
+  SiAwslambda,
+  SiExpress,
+  SiJest,
+  SiRedux,
+  SiVitest,
+} from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiAdobephotoshop } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
@@ -111,9 +119,19 @@ const Skills = () => {
       skillIcon: <FaBootstrap size={64} />,
     },
     {
-      skillName: "AWS",
-      color: "text-amber-400",
-      skillIcon: <FaAws size={64} />,
+      skillName: "DynamoDB",
+      color: "text-blue-500",
+      skillIcon: <SiAmazondynamodb size={64} />,
+    },
+    {
+      skillName: "Lambda",
+      color: "text-orange-500",
+      skillIcon: <SiAwslambda size={64} />,
+    },
+    {
+      skillName: "Amplify",
+      color: "text-amber-500",
+      skillIcon: <SiAwsamplify size={64} />,
     },
     {
       skillName: "Python",
