@@ -1,6 +1,6 @@
 import React from "react";
-import homeAvatar from "../assest/homeAvatar.png";
-import vivekcode from "../assest/vivek-code.svg";
+import homeAvatar from "../assets/homeAvatar.png";
+import vivekcode from "../assets/vivek-code.svg";
 
 const Home = () => {
   return (
