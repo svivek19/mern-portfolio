@@ -30,15 +30,22 @@ const getAllData = async (req, res) => {
 // Update data by _id
 const updateData = async (req, res) => {
   const { _id } = req.params;
-  const updateData = req.body;
+  const updateFields = req.body;
+
   try {
-    const response = await Data.findByIdAndUpdate(
-      _id,
-      { $set: updateData },
+    const updatedData = await Data.findOneAndUpdate(
+      { _id: _id },
+      { $set: updateFields },
       { new: true }
     );
-    return response.status(200).json({ message: "Data updated successfully" });
+
+    if (!updatedData) {
+      return res.status(404).json({ message: "Data not found" });
+    }
+
+    return res.status(200).json({ data: updatedData });
   } catch (error) {
+    console.error("Error updating data:", error.message);
     return res
       .status(500)
       .json({ message: "Error updating data", error: error.message });
