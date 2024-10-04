@@ -4,28 +4,19 @@ import ProjectCard from "../component/ProjectCard";
 const Project = () => {
   const projectList = [
     {
-      title: "Project One",
-      tags: ["JavaScript", "MongoDB"],
-    },
-    {
-      title: "Project Two",
-
-      tags: ["React", "Node.js"],
+      title: "Food Delivery Website",
+      tags: ["React JS", "Tailwind CSS", " Firebase"],
+      link: "https://vbite.vercel.app/",
     },
     {
       title: "Blog Website",
-
       tags: ["Firebase", "React JS", "Tailwind CSS"],
-    },
-    {
-      title: "Food delevery Website",
-
-      tags: ["Express", "MySQL"],
+      link: "https://react-blog-vivek.vercel.app/",
     },
     {
       title: "Ecommerce Website",
-
-      tags: ["TypeScript", "GraphQL"],
+      tags: ["Firebase", "React JS", "Tailwind CSS"],
+      link: "https://react-dress-shop-ecommerce-vvk.netlify.app/",
     },
   ];
 

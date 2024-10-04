@@ -27,7 +27,7 @@ const ProjectCard = ({ projectList }) => {
 
           <div className="flex justify-end">
             <button className="bg-violet-500 rounded-lg px-2 py-1 text-sm flex items-center gap-1">
-              <a href="#" target="_blank">
+              <a href={project.link} target="_blank">
                 View
               </a>
 
