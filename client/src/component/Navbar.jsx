@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { MdOutlineAdminPanelSettings } from "react-icons/md";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -84,6 +85,9 @@ const Navbar = () => {
               >
                 Contact
               </Link>
+            </li>
+            <li className="flex items-center cursor-pointer hover:text-red-500 duration-300">
+              <MdOutlineAdminPanelSettings size={25} />
             </li>
           </ul>
         </div>
