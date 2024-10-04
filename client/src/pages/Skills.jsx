@@ -25,6 +25,7 @@ import {
   SiAwsamplify,
   SiAwslambda,
   SiExpress,
+  SiHostinger,
   SiJest,
   SiRedux,
   SiVitest,
@@ -155,6 +156,11 @@ const Skills = () => {
       toolName: "GitHub",
       toolIcon: <FaGithub size={64} />,
       color: "text-gray-300",
+    },
+    {
+      toolName: "Hostinger",
+      toolIcon: <SiHostinger size={64} />,
+      color: "text-violet-500",
     },
     {
       toolName: "Postman",
