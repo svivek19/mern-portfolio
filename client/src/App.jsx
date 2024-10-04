@@ -6,6 +6,7 @@ import Skills from "./pages/Skills";
 import Project from "./pages/Project";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
+import AdminForm from "./component/admin/AdminForm";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/projects" element={<Project />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/admin-form" element={<AdminForm />} />
       </Routes>
     </Router>
   );
