@@ -1,19 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { MdOutlineAdminPanelSettings } from "react-icons/md";
-import AdminLogin from "./admin/AdminLogin";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [triggerDialog, setTriggerDialog] = useState(false);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
-  };
-
-  // Handle trigger dialog
-  const handleDialogToggle = () => {
-    setTriggerDialog(!triggerDialog);
   };
 
   return (
@@ -93,22 +85,9 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
-            <li
-              onClick={handleDialogToggle}
-              className="flex items-center cursor-pointer hover:text-red-500 duration-300"
-            >
-              <MdOutlineAdminPanelSettings size={25} />
-            </li>
           </ul>
         </div>
       </div>
-
-      {triggerDialog && (
-        <AdminLogin
-          triggerDialog={triggerDialog}
-          onClose={handleDialogToggle}
-        />
-      )}
     </nav>
   );
 };
